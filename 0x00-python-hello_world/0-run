@@ -1,18 +1,2 @@
-#!/bin/bash
-
-# I want to check if the PYFILE environment variable is set
-if [ -z "$PYFILE" ]
-then
-echo "Error: PYFILE environment variable is not set."
-exit 1
-fi
-
-# Help me check if the specified Python file exists
-if [ ! -f "$PYFILE" ]
-then
-echo "Error: Python file '$PYFILE' not found."
-exit 1
-fi
-
-# This should run the Python script
+#!/bin/bash"
 python3 "$PYFILE"
