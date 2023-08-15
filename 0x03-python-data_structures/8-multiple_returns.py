@@ -1,9 +1,5 @@
-#!/usr/bin/python3
-def multiple_returns(sentence):
-    l = len(sentence)
-    if l == 0:
-        c = None
+def custom_multiple_returns(sentence):
+    if len(sentence) == 0:
+        return (0, None)
     else:
-        c = sentence[0]
-    tup = (l, c)
-    return tup
+        return (len(sentence), sentence[0])
